@@ -9,13 +9,13 @@ Alberto Belloni, Sarah Eno, Yongbin Feng, Aaron Hunt, Geng-Yuan Jeng, Zachary Th
 
 Make sure to describe any changes you made when you push.
 
-## Instructions for checking out this repository and installing LaTex 
-
-mkdir FluorPaper_EJ200; cd FluorPaperEJ200
-git clone git@github.com:ZishuoYang/DetectorNote_Fluorescence_EJ200.git
-
-sudo apt-get install texlive texlive-base
-sudo apt-get install texlive-humanities
-# To produce a .pdf file from the .tex file
-pdflatex DN_FluorPaper_EJ200_ZYang.tex
+## Instructions for cloning this repository and installing LaTex 
+#### Clone git repository
+mkdir FluorPaper_EJ200; cd FluorPaperEJ200;</br>
+git clone git@github.com:ZishuoYang/DetectorNote_Fluorescence_EJ200.git; </br>
+#### Install LaTex if haven't
+sudo apt-get install texlive texlive-base</br>
+sudo apt-get install texlive-humanities</br>
+#### To produce a .pdf file from the .tex file
+pdflatex DN_FluorPaper_EJ200_ZYang.tex</br>
 
