@@ -37,9 +37,9 @@
 
 %% if you use PostScript figures in your article
 %% use the graphics package for simple commands
-%% \usepackage{graphics}
+\usepackage{graphics}
 %% or use the graphicx package for more complicated commands
-%% \usepackage{graphicx}
+\usepackage{graphicx}
 %% or use the epsfig package if you prefer to use the old commands
 %% \usepackage{epsfig}
 
@@ -74,6 +74,8 @@
 
 % \biboptions{}
 
+\usepackage{float}
+\usepackage{color}
 
 \journal{Nuclear Physics B}
 
@@ -186,44 +188,121 @@ EJ-200 uses PVT as a substrate. It has a light output that is 60\% of anthracene
 Eljen Technology prepared the samples with dimensions of 1x1x5 cm$^{3}$. 
 The samples were made with concentration of the primary dopant at 1.0 and 2.0 that of 
 the nominal concentration (which has optimized light output before irradiation). 
+1P and 2P refer to nominal and double the nominal concentration of the primary, 
+while 1X and 2X refer to nominal and double the nominal concentration of the secondary.
 The samples for irradiation were wrapped in tyvek sheets and in contact with air.
-Using a $\rm {^{60}Co}$ source at the National Institute of Standard and Technology, these samples were irradiated  
-at rates of 10 krad/hr and 429 krad/hr to a total dose of 3 Mrad. 
-Additional samples that were produced in the same batch were kept for calibration and comparison.
+Using the LHC beamline irradiation facility (CASTOR) at CERN, 
+one 1X and one 2X sample were irradiated at about 0.24 krad/hr for a total dose of 0.24 Mrad. (to add uncertainties) 
+Using a $\rm {^{60}Co}$ source at the National Institute of Standard and Technology (NIST), some 1P and 2P samples were irradiated  
+at rates of 10 krad/hr and 429 krad/hr for a total dose of 3 Mrad, at about 23 $^\circ$C ambient temperature.  
+Using a $\rm {^{60}Co}$ source at NASA, one 1P and one 2P sample were irradiated  
+at 10 krad/hr for a total dose of 4 Mrad, at about 23 $^\circ$C ambient temperature; 
+Two samples that previously received 3 Mrad at 10 krad/hr at NIST were irradiated again at 10 krad/hr for an additional dose of 4 Mrad;
+Two 1X samples were irradiated at 80 krad/hr for 5.8 Mrad, at different temperatures 23 $^\circ$C and -30 $^\circ$C.
+Additional samples that were produced in the same batch were kept non-irradiated for calibration and comparison.
+
+(To add a table for sample descriptions later.)
 
 \section{Instrumentation and Techniques}
 The fluorescence emission spectra were measured using a FluoroMax-Plus fluorescence spectrometer by Horiba Scientific. 
-The spectrometer uses a xenon arc lamp as continuous light source. 
-Light from the lamp is collected by a diamond-turned elliptical mirror and focused on the entrance slit of the excitation monochromator.The entrance and exit slits of the excitation monochromator are continuously adjustable, 
+The spectrometer uses a Xenon arc lamp as continuous light source. 
+Light from the lamp is collected by a diamond-turned elliptical mirror and focused on the entrance slit of the excitation monochromator. 
+The entrance and exit slits of the excitation monochromator are continuously adjustable, 
 which controls the bandpass of the excitation beam. 
 A toroidal mirror focuses the excitation beam onto the sample, while a small amount of the beam is split off by a beam-splitter 
 to the reference silicon photodiode. 
 Fluorescence emission produced by the sample is subsequently collected at ninety-degree angle with respect to the excitation beam. 
 Similar to the excitation monochromator, the emission monochromator selects the bandpass of emission light that is sent to 
 a Hamamatsu R928 photomultiplier tube (PMT). 
-After correcting the PMT and the photodiode's signals according to their quantum efficiencies, 
+After correcting signals of the PMT and the photodiode according to their quantum efficiencies, 
 the fluorescence emission signal is calculated as the ratio of the PMT's signal over the photodiode's signal. 
 For each fluorescence spectrum measurement, a fixed excitation wavelength is used, 
 and the emission intensity at a range of wavelengths is measured. 
-(Include instrument diagram from the manual and cite it?)
 
 In order to study the effect of radiation damage on the primary and secondary dopants, three excitation wavelengths were chosen: 
 285 nm 	exciting PVT and the primary dopant, 
 350 nm exciting the secondary and primary dopants, 
 and 400 nm exciting mostly the secondary dopant. 
-The sample' placement in the spectrometer adopts the front-surface configuration, which gives the excitation beam a sixty-degree 
-incident angle and maximizes fluorescence emission at the surface. 
+The sample placement in the spectrometer adopts the front-surface configuration (shown in Figure~\ref{fig:sample_placement}), 
+which gives the excitation beam a sixty-degree incident angle and maximizes fluorescence emission at the surface. 
 This minimizes the effect of self absorption when measuring fluorescence yield after irradiation. 
-(include the diagram for front-surface excitation here)
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=300pt]{./figures/sample_placement.png}
+	\caption{Front-surface configuration for fluorescence spectrum measurements.}
+	\label{fig:sample_placement}
+\end{figure}
 
 \section{Measurements} 
+After irradiations, the samples showed coloration which partially disappeared after time due to the annealing of the substrate. 
+The samples were repeatedly measured after irradiation until no additional annealing was shown. 
+Typical fluorescence spectra of EJ-200 is shown in Figure~\ref{fig:EJ200SP-1P-exc285}, 
+after 3 Mrad at 10 krad/hr and after 3 Mrad at 429 krad/hr.
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=300pt]{./figures/EJ200SP-1P-exc285.png}
+	%%\includegraphics[width=175pt]{./figures/EJ200SP-2P-exc285.png}
+	\caption{Fluorescence spectrum excited at 285 nm.}
+	\label{fig:EJ200SP-1P-exc285}
+\end{figure}
 
+We calculate the light yield ratio (R) using the integrated area of the irradiated sample's spectrum 
+with respect to the corresponding non-irradiated one. 
 
+Table~\ref{table:1} shows the ratio of light output excited at three different wavelengths for 
+1P {\color{red}{(1P1X?)}} samples of different doses and dose rates. 
 
+Table~\ref{table:2} shows the ratio of light output excited at three different wavelengths for 
+1P {\color{red}{(1P1X?)}} samples of different doses at dose rate 10 krad/hr. 
 
+Table~\ref{table:3} shows the ratio of light output excited at three different wavelengths for 
+1X {\color{red}{(1P1X?)}} samples of same dose (5.8 Mrad) and dose rate (80 krad/hr), 
+but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) during irradiation. 
 
-\label{}
+\begin{table}[!h]
+\centering
+  \caption{Light output ratio after irradiations of different doses and dose rates.}
+  \begin{tabular}{l|l|l|l|l}
+    \hline
+    Dose (Mrad)  & Dose rate (krad/hr)& R at 285 nm	& R at 350 nm	& R at 400 nm    \\ \hline 
+    0.24$\pm$    & 0.24$\pm$ 	      & 0.94$\pm$	& 0.94$\pm$	& 0.89$\pm$   \\ \hline
+    3.0 $\pm$    & 10 $\pm$	      & 0.95$\pm$	& 0.95$\pm$	& 0.92$\pm$   \\ \hline
+    3.0 $\pm$    & 430$\pm$	      & 0.95$\pm$	& 0.92$\pm$	& 0.84$\pm$   \\ 
+    \hline
+  \end{tabular}
+  \label{table:1}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \caption{Light output ratio after irradiations of different total doses at dose rate 10 krad/hr.}
+  \begin{tabular}{l|l|l|l}
+    \hline
+    Dose (Mrad)  & R at 285 nm	& R at 350 nm	& R at 400 nm    \\ \hline 
+    3.0 $\pm$    & 0.95$\pm$	& 0.95$\pm$	& 0.92$\pm$   \\ \hline
+    4.0 $\pm$    & 0.94$\pm$	& 0.92$\pm$	& 0.88$\pm$   \\ \hline
+    7.0 $\pm$    & 0.91$\pm$	& 0.88$\pm$	& 0.82$\pm$   \\ 
+    \hline
+  \end{tabular}
+  \label{table:2}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \caption{Light output ratio after irradiations of the same dose and dose rate at 23 $^\circ$C and -30 $^\circ$C.}
+  \begin{tabular}{l|l|l|l}
+    \hline
+    T ($^\circ$C)  & R at 285 nm	& R at 350 nm	& R at 400 nm    \\ \hline 
+    23  $\pm$    & 0.90$\pm$	& 0.88$\pm$	& 0.78$\pm$   \\ \hline
+    -30 $\pm$    & 0.91$\pm$	& 0.84$\pm$	& 0.70$\pm$   \\ 
+    \hline
+  \end{tabular}
+  \label{table:3}
+\end{table}
+
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
