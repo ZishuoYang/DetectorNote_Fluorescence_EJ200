@@ -5,7 +5,7 @@ For collaborating the summer 2016 paper on fluorescence measurements on EJ200 pl
 
 ## Contributors
 
-Alberto Belloni, Sarah Eno, Yongbin Feng, Aaron Hunt, Geng-Yuan Jeng, Zachary Thomas, Yao Yao, and Zishuo Yang. (Let me know if I'm missing anyone. -ZY)
+Alberto Belloni, Sarah Eno, Yongbin Feng, Charles Hurlbut, Aaron Hunt, Geng-Yuan Jeng, Zachary Thomas, Yao Yao, and Zishuo Yang. (Let me know if I'm missing anyone. -ZY)
 
 Make sure to describe any changes you made when you push.
 

@@ -76,6 +76,7 @@
 
 \usepackage{float}
 \usepackage{color}
+%%\usepackage{multirow}
 
 \journal{Nuclear Physics B}
 
@@ -104,7 +105,7 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Fluorescence Yield Study on Plastic Scintillator EJ-200\\ Before and After Irradiation}
+\title{Fluorescence Emission Study on Plastic Scintillator EJ-200 After Irradiation}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{<author name>}
@@ -125,10 +126,9 @@
 \address[eljen]{Eljen Technology, 1300 W. Broadway, Sweetwater, TX 79556, USA}
 
 \begin{abstract}
-Fluorescence emission yield versus wavelengths for plastic scintillator EJ-200 of various dopant concentrations is measured,
- before and after irradiation by $\rm {^{60}Co}$ source for various doses and dose rates. 
-The total light yield under highly ionizing radiation is also measured using a $\rm {^{239}Pu}$ $\alpha$ source. 
-
+Fluorescence emission yield versus wavelengths for plastic scintillator EJ-200 of various dopant concentrations is measured, 
+before and after irradiation by $\rm {^{60}Co}$ source for various doses and dose rates. 
+Dose, dose rate, and temperature effects on dopants during irradiations are investigated.
 \end{abstract}
 
 \begin{keyword}
@@ -186,11 +186,11 @@ for different total doses and dose rates.
 \section{Sample and Irradiation}
 EJ-200 uses PVT as a substrate. It has a light output that is 60\% of anthracene and a maximum-emission wavelength of 425 nm (blue). 
 Eljen Technology prepared the samples with dimensions of 1x1x5 cm$^{3}$. 
-The samples were made with concentration of the primary dopant at 1.0 and 2.0 that of 
+The samples were made with concentration of the primary and secondary dopants at 1.0 and 2.0 that of 
 the nominal concentration (which has optimized light output before irradiation). 
 1P and 2P refer to nominal and double the nominal concentration of the primary, 
 while 1X and 2X refer to nominal and double the nominal concentration of the secondary.
-The samples for irradiation were wrapped in tyvek sheets and in contact with air.
+The samples for irradiation were wrapped in Tyvek sheets and were in contact with air.
 Using the LHC beamline irradiation facility (CASTOR) at CERN, 
 one 1X and one 2X sample were irradiated at about 0.24 krad/hr for a total dose of 0.24 Mrad. (to add uncertainties) 
 Using a $\rm {^{60}Co}$ source at the National Institute of Standard and Technology (NIST), some 1P and 2P samples were irradiated  
@@ -200,8 +200,32 @@ at 10 krad/hr for a total dose of 4 Mrad, at about 23 $^\circ$C ambient temperat
 Two samples that previously received 3 Mrad at 10 krad/hr at NIST were irradiated again at 10 krad/hr for an additional dose of 4 Mrad;
 Two 1X samples were irradiated at 80 krad/hr for 5.8 Mrad, at different temperatures 23 $^\circ$C and -30 $^\circ$C.
 Additional samples that were produced in the same batch were kept non-irradiated for calibration and comparison.
+Table~\ref{table:samples} summarizes the samples irradiated in this study.
 
-(To add a table for sample descriptions later.)
+\begin{table}[!ht]
+\centering
+  \caption{Summary of irradiated EJ-200 samples. 
+1P and 2P refer to nominal and double the nominal concentration of the primary dopant, 
+while 1X and 2X refer to nominal and double the nominal concentration of the secondary dopant.}
+  \begin{tabular}{c|c|c}
+    \hline
+    Dopant concentration 	    & Dose (Mrad)  		& Dose rate (krad/hr)    \\ \hline 
+    1P     	    		    & 3 $\pm$  			& 10 $\pm$  	   	 \\ 
+    2P     	    		    & 3 $\pm$  			& 10 $\pm$  	   	 \\ \hline
+    1P				    & 3 $\pm$			& 429 $\pm$		 \\ 
+    2P				    & 3 $\pm$			& 429 $\pm$		 \\ \hline
+    1P     	    		    & 4 $\pm$  			& 10 $\pm$  	   	 \\ 
+    2P     	    		    & 4 $\pm$  			& 10 $\pm$  	   	 \\ \hline
+    1P				    & 7 $\pm$			& 10 $\pm$		 \\ 
+    2P				    & 7 $\pm$			& 10 $\pm$		 \\ \hline
+    1X     	    		    & 0.24 $\pm$  		& 0.24 $\pm$  	   	 \\ 
+    2X     	    		    & 0.24 $\pm$  		& 0.24 $\pm$  	   	 \\ \hline
+    1X at ~23 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\ 
+    1X at -30 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\ \hline
+    \hline
+  \end{tabular}
+  \label{table:samples}
+\end{table}
 
 \section{Instrumentation and Techniques}
 The fluorescence emission spectra were measured using a FluoroMax-Plus fluorescence spectrometer by Horiba Scientific. 
@@ -227,10 +251,9 @@ The sample placement in the spectrometer adopts the front-surface configuration 
 which gives the excitation beam a sixty-degree incident angle and maximizes fluorescence emission at the surface. 
 This minimizes the effect of self absorption when measuring fluorescence yield after irradiation. 
 
-
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=300pt]{./figures/sample_placement.png}
+	\includegraphics[width=200pt]{./figures/sample_placement.png}
 	\caption{Front-surface configuration for fluorescence spectrum measurements.}
 	\label{fig:sample_placement}
 \end{figure}
@@ -302,6 +325,7 @@ but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) durin
   \end{tabular}
   \label{table:3}
 \end{table}
+
 
 
 %% The Appendices part is started with the command \appendix;
