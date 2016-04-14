@@ -221,7 +221,7 @@ while 1X and 2X refer to nominal and double the nominal concentration of the sec
     1X     	    		    & 0.24 $\pm$  		& 0.24 $\pm$  	   	 \\ 
     2X     	    		    & 0.24 $\pm$  		& 0.24 $\pm$  	   	 \\ \hline
     1X at ~23 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\ 
-    1X at -30 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\ \hline
+    1X at -30 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\
     \hline
   \end{tabular}
   \label{table:samples}
@@ -264,7 +264,7 @@ The samples were repeatedly measured after irradiation until no additional annea
 Typical fluorescence spectra of EJ-200 is shown in Figure~\ref{fig:EJ200SP-1P-exc285}, 
 after 3 Mrad at 10 krad/hr and after 3 Mrad at 429 krad/hr.
 
-\begin{figure}[!h]
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=300pt]{./figures/EJ200SP-1P-exc285.png}
 	%%\includegraphics[width=175pt]{./figures/EJ200SP-2P-exc285.png}
@@ -277,15 +277,17 @@ with respect to the corresponding non-irradiated one.
 
 Table~\ref{table:1} shows the ratio of light output excited at three different wavelengths for 
 1P {\color{red}{(1P1X?)}} samples of different doses and dose rates. 
-
 Table~\ref{table:2} shows the ratio of light output excited at three different wavelengths for 
 1P {\color{red}{(1P1X?)}} samples of different doses at dose rate 10 krad/hr. 
-
 Table~\ref{table:3} shows the ratio of light output excited at three different wavelengths for 
 1X {\color{red}{(1P1X?)}} samples of same dose (5.8 Mrad) and dose rate (80 krad/hr), 
 but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) during irradiation. 
 
-\begin{table}[!h]
+({\color{red}{Or should I present all the data in one table?}}) 
+Table~\ref{table:light-yield-ratio} shows ratio of light output at different excitation wavelengths ($R_{x~nm}$) 
+for all the irradiated samples in this study.
+
+\begin{table}[!ht]
 \centering
   \caption{Light output ratio after irradiations of different doses and dose rates.}
   \begin{tabular}{l|l|l|l|l}
@@ -299,7 +301,7 @@ but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) durin
   \label{table:1}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
   \caption{Light output ratio after irradiations of different total doses at dose rate 10 krad/hr.}
   \begin{tabular}{l|l|l|l}
@@ -313,7 +315,7 @@ but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) durin
   \label{table:2}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
   \caption{Light output ratio after irradiations of the same dose and dose rate at 23 $^\circ$C and -30 $^\circ$C.}
   \begin{tabular}{l|l|l|l}
@@ -326,6 +328,30 @@ but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) durin
   \label{table:3}
 \end{table}
 
+\begin{table}[!ht]
+\centering
+  \caption{Ratio of light output excited at different wavelengths to that before irradiation for EJ-200 scintillators. 
+1P and 2P refer to nominal and double the nominal concentration of the primary dopant, 
+while 1X and 2X refer to nominal and double the nominal concentration of the secondary dopant.}	
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline
+    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 $\pm$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
+    2P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 ${\pm}$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ \hline
+    1P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ 
+    2P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ \hline
+    1P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.93 ${\pm}$	&0.92 ${\pm}$	&0.87 ${\pm}$	\\ 
+    2P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.94 ${\pm}$	&0.93 ${\pm}$	&0.90 ${\pm}$	\\ \hline
+    1P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.81 ${\pm}$	\\ 
+    2P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.89 ${\pm}$	&0.83 ${\pm}$	\\ \hline
+    1X     	    	 & 0.24 $\pm$  	& 0.24 $\pm$  	   	 &0.94 ${\pm}$	&0.94 ${\pm}$	&0.88 ${\pm}$	\\ 
+    2X     	    	 & 0.24 $\pm$  	& 0.24 $\pm$  	   	 &0.95 ${\pm}$	&0.97 ${\pm}$	&0.90 ${\pm}$	\\ \hline
+    1X at ~23 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.77 ${\pm}$	\\ 
+    1X at -30 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.84 ${\pm}$	&0.70 ${\pm}$	\\
+    \hline
+  \end{tabular}
+  \label{table:light-yield-ratio}
+\end{table}
 
 
 %% The Appendices part is started with the command \appendix;

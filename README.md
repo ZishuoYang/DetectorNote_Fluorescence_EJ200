@@ -11,7 +11,7 @@ Make sure to describe any changes you made when you push.
 
 ## Instructions for cloning this repository and installing LaTex 
 #### Clone git repository
-mkdir FluorPaper_EJ200; cd FluorPaperEJ200;</br>
+mkdir FluorPaper_EJ200; cd FluorPaper_EJ200;</br>
 git clone git@github.com:ZishuoYang/DetectorNote_Fluorescence_EJ200.git; </br>
 #### Install LaTex if haven't
 sudo apt-get install texlive texlive-base</br>
