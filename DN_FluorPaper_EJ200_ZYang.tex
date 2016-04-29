@@ -248,10 +248,11 @@ In order to study the effect of radiation damage on the primary and secondary do
 350 nm exciting the secondary and primary dopants, 
 and 400 nm exciting mostly the secondary dopant. 
 The sample placement in the spectrometer adopts the front-surface configuration (shown in Figure~\ref{fig:sample_placement}), 
-which gives the excitation beam a sixty-degree incident angle and maximizes fluorescence emission at the surface. 
+which gives the excitation beam a 60$^\circ$ incident angle and maximizes fluorescence emission at the surface. 
 This minimizes the effect of self absorption when measuring fluorescence yield after irradiation. 
-
-\begin{figure}[!h]
+Continuous measurements after irradiation for up to 7 days show no significant change in a sample's light output, 
+while more than 15\% recovery in the bulk transmission spectrum is seen. ({\color{red}{should I show plots about this in the appendix?}}) 
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=200pt]{./figures/sample_placement.png}
 	\caption{Front-surface configuration for fluorescence spectrum measurements.}
@@ -275,58 +276,17 @@ after 3 Mrad at 10 krad/hr and after 3 Mrad at 429 krad/hr.
 We calculate the light yield ratio (R) using the integrated area of the irradiated sample's spectrum 
 with respect to the corresponding non-irradiated one. 
 
+({\color{red}{Should I present all the data in one table?}}) 
+Table~\ref{table:light-yield-ratio} shows ratio of light output at different excitation wavelengths ($R_{x~nm}$) 
+for all the irradiated samples in this study.
+
 Table~\ref{table:1} shows the ratio of light output excited at three different wavelengths for 
-1P {\color{red}{(1P1X?)}} samples of different doses and dose rates. 
+1P {\color{red}{(1P1X?)}} and 2P samples of 3.0 Mrad at 10 krad/hr and 429 krad/hr. 
 Table~\ref{table:2} shows the ratio of light output excited at three different wavelengths for 
 1P {\color{red}{(1P1X?)}} samples of different doses at dose rate 10 krad/hr. 
 Table~\ref{table:3} shows the ratio of light output excited at three different wavelengths for 
 1X {\color{red}{(1P1X?)}} samples of same dose (5.8 Mrad) and dose rate (80 krad/hr), 
 but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) during irradiation. 
-
-({\color{red}{Or should I present all the data in one table?}}) 
-Table~\ref{table:light-yield-ratio} shows ratio of light output at different excitation wavelengths ($R_{x~nm}$) 
-for all the irradiated samples in this study.
-
-\begin{table}[!ht]
-\centering
-  \caption{Light output ratio after irradiations of different doses and dose rates.}
-  \begin{tabular}{l|l|l|l|l}
-    \hline
-    Dose (Mrad)  & Dose rate (krad/hr)& R at 285 nm	& R at 350 nm	& R at 400 nm    \\ \hline 
-    0.24$\pm$    & 0.24$\pm$ 	      & 0.94$\pm$	& 0.94$\pm$	& 0.89$\pm$   \\ \hline
-    3.0 $\pm$    & 10 $\pm$	      & 0.95$\pm$	& 0.95$\pm$	& 0.92$\pm$   \\ \hline
-    3.0 $\pm$    & 430$\pm$	      & 0.95$\pm$	& 0.92$\pm$	& 0.84$\pm$   \\ 
-    \hline
-  \end{tabular}
-  \label{table:1}
-\end{table}
-
-\begin{table}[!ht]
-\centering
-  \caption{Light output ratio after irradiations of different total doses at dose rate 10 krad/hr.}
-  \begin{tabular}{l|l|l|l}
-    \hline
-    Dose (Mrad)  & R at 285 nm	& R at 350 nm	& R at 400 nm    \\ \hline 
-    3.0 $\pm$    & 0.95$\pm$	& 0.95$\pm$	& 0.92$\pm$   \\ \hline
-    4.0 $\pm$    & 0.94$\pm$	& 0.92$\pm$	& 0.88$\pm$   \\ \hline
-    7.0 $\pm$    & 0.91$\pm$	& 0.88$\pm$	& 0.82$\pm$   \\ 
-    \hline
-  \end{tabular}
-  \label{table:2}
-\end{table}
-
-\begin{table}[!ht]
-\centering
-  \caption{Light output ratio after irradiations of the same dose and dose rate at 23 $^\circ$C and -30 $^\circ$C.}
-  \begin{tabular}{l|l|l|l}
-    \hline
-    T ($^\circ$C)  & R at 285 nm	& R at 350 nm	& R at 400 nm    \\ \hline 
-    23  $\pm$    & 0.90$\pm$	& 0.88$\pm$	& 0.78$\pm$   \\ \hline
-    -30 $\pm$    & 0.91$\pm$	& 0.84$\pm$	& 0.70$\pm$   \\ 
-    \hline
-  \end{tabular}
-  \label{table:3}
-\end{table}
 
 \begin{table}[!ht]
 \centering
@@ -352,6 +312,76 @@ while 1X and 2X refer to nominal and double the nominal concentration of the sec
   \end{tabular}
   \label{table:light-yield-ratio}
 \end{table}
+
+\begin{table}[!ht]
+\centering
+  \caption{Light output ratio after irradiations of the same total dose and at different dose rates.}
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline
+    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 $\pm$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
+    1P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ \hline 
+    2P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 ${\pm}$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
+    2P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ \hline
+  \end{tabular}
+  \label{table:1}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+  \caption{Light output ratio after irradiations of different total doses at dose rate 10 krad/hr.}
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline
+    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 $\pm$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
+    1P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.93 ${\pm}$	&0.92 ${\pm}$	&0.87 ${\pm}$	\\ 
+    1P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.81 ${\pm}$	\\ \hline
+    2P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 ${\pm}$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
+    2P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.94 ${\pm}$	&0.93 ${\pm}$	&0.90 ${\pm}$	\\ 
+    2P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.89 ${\pm}$	&0.83 ${\pm}$	\\ \hline
+  \end{tabular}
+  \label{table:2}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+  \caption{Light output ratio after irradiations of the same total dose and dose rate at 23 $^\circ$C and -30 $^\circ$C.}
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline
+    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1X at ~23 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.77 ${\pm}$	\\ 
+    1X at -30 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.84 ${\pm}$	&0.70 ${\pm}$	\\ \hline
+  \end{tabular}
+  \label{table:3}
+\end{table}
+
+
+\section{Interpretation (to add more)}
+If the dose rate effect on light output is due to oxygen diffusion, then it is expected that the reduction in light output 
+for the same dose would have a negative correlation with the dose rate, except for when the dose rate is low enough that 
+oxygen permeates the entire sample. 
+
+Comparing the light output ratios after irradiations of 3 Mrad dose at two different dose rates, 10 krad/hr and 429 krad/hr, 
+we find no negative correlation between the reduction in light output and dose rate (Table~\ref{table:1}).
+On the contrary, measurements at 400 nm excitation wavelength, which almost exclusively excites the secondary dopant, 
+show that the reduction in the secondary dopant's light output is two times higher at 429 krad/hr than at 10 krad/hr.
+Measurements at 350 nm excitation wavelength, which excites largely secondary dopant and non-negligible primary dopant, 
+confirm greater reduction at 429 krad/hr in the secondary dopant's light output. 
+Measurements at 285 nm excitation wavelength, which excites PVT and the primary dopant, show no significant difference 
+in light output ratios between two dose rates. 
+({\color{red}{Alberto pointed out that there's an almost-consistent slight difference as seen in Figure~\ref{fig:EJ200SP-1P-exc285}'s primary range. Significant?}}) 
+
+~                                     
+
+The diffusion rate of oxygen is dependent on temperature, and more oxygen diffusion into the scintillator is expected at higher temperature. 
+Temperature also affects molecules' average kinetic energy and therefore various energy transfer mechanisms in the scintillator. 
+Studies have shown temperature effects on plastic scintillator in pre-irradiation temperature treatment (to cite) and post-irradiation 
+annealing (to cite). 
+However, there has been little study on the temperature effect during irradiation on plastic scintillators.
+Table~\ref{table:3} shows more reduction in the secondary dopant's light output at -30$^\circ$C than that at 23$^\circ$C. 
+
+
+
 
 
 %% The Appendices part is started with the command \appendix;
