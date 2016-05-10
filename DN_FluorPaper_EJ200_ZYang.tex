@@ -21,7 +21,7 @@
 %% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
-\documentclass[review]{elsarticle}
+\documentclass[preprint]{elsarticle}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -121,7 +121,7 @@
 \author[umd]{Geng-Yuan Jeng}
 \author[umd]{Zachary Thomas}
 \author[umd]{Yao Yao}
-\author[umd]{Zishuo Yang}
+\author[umd]{Zishuo Yang*}
 
 \address[umd]{Department of Physics, University of Maryland, College Park, MD 20740, USA}
 \address[eljen]{Eljen Technology, 1300 W. Broadway, Sweetwater, TX 79556, USA}
@@ -151,7 +151,7 @@ Organic plastic scintillators made of polystyrene (PS) or polyvinyltoluene (PVT)
 long been popular in detectors used in particle physics, nuclear physics, radiation safety, and health physics applications 
 due to their high light output, low cost, fast response, and versatility of physical construction. 
 Prolonged exposure of plastic scintillator to ionizing radiation, however, can result in damage such that
-absorption in the substrate increases and the transfer efficiency from initial excitation of the substrate to the dopants
+absorption in the substrate increases and the transfer efficiency of the initial excitation of the substrate to the dopants
 combined with a dopant's probability of radiative relaxation lessens. 
 In this paper, we present fluorescence emission measurements before and after irradiations of various doses and 
 dose rates for one type of plastic scintillator manufactured by Eljen Technology, EJ-200 (similar to BC-408 from Bicron) 
@@ -198,7 +198,7 @@ One 1P and one 2P sample were irradiated at 9 krad/hr for a total dose of 4 Mrad
 Two samples that previously received 3 Mrad at 9 krad/hr at NIST were irradiated again at 9 krad/hr for an additional dose of 4 Mrad;
 Two 1X samples were irradiated at 80 krad/hr for 6 Mrad, at different temperatures 23 $^\circ$C and -30 $^\circ$C.
 Using the LHC beamline irradiation facility CASTOR, where neutrons and gamma rays contribute the most to ionizing radiation, 
-one 1X and one 2X sample were irradiated at 0.24 krad/hr for a total dose of 0.24 Mrad. 
+one 1X and one 2X sample were irradiated at 0.84 krad/hr for a total dose of 1.68 Mrad. 
 Additional samples that were produced in the same batch were kept non-irradiated for calibration and comparison.
 Table~\ref{table:samples} summarizes the samples irradiated in this study.
 
@@ -218,8 +218,8 @@ while 1X and 2X refer to nominal and double the nominal concentration of seconda
     2P 		    & 4.00 $\pm$ 0.07		& 9.20 $\pm$ 0.16  	 & $\rm {^{60}Co}$	\\ \hline
     1P		    & (2.95+4.00) $\pm$ 0.09	& 9.32 $\pm$ 0.11	 & $\rm {^{60}Co}$	\\ 
     2P		    & (2.95+4.00) $\pm$ 0.09	& 9.32 $\pm$ 0.11	 & $\rm {^{60}Co}$	\\ \hline
-    1X 		    & 0.24 $\pm$ 0.05		& 0.24 $\pm$ 0.05   	 & CASTOR	\\ 
-    2X 		    & 0.24 $\pm$ 0.05		& 0.24 $\pm$ 0.05  	 & CASTOR 	\\ \hline
+    1X 		    & 1.68 $\pm$ 0.17		& 0.84 $\pm$ 0.17   	 & CASTOR	\\ 
+    2X 		    & 1.68 $\pm$ 0.17		& 0.84 $\pm$ 0.17  	 & CASTOR 	\\ \hline
     1X		    & 5.82 $\pm$ 0.10		& 80.3 $\pm$ 1.4	 & $\rm {^{60}Co}$, at ~23 $^\circ$C\\ 
     1X		    & 5.82 $\pm$ 0.10		& 80.4 $\pm$ 1.4	 & $\rm {^{60}Co}$, at -30 $^\circ$C\\
     \hline
@@ -286,15 +286,15 @@ We calculate the light output ratio (R) using the integrated area of the irradia
 with respect to the corresponding non-irradiated one. 
 Systematic uncertainties associated with the integrated area of each spectrum measurement are identified. 
 Repeated measurements on the reference sample on different days, after turning off and on the instrument everyday, 
-suggest the corresponding relative uncertainty to be $\pm$8\%. 
+suggest the relative uncertainty associated with day-to-day fluctuation to be $\pm$8\%. 
 However, repeated measurements on the reference sample during the same day, when the spectrophotometer is continuously running, 
-suggest the corresponding relative uncertainty to be $\pm$1\%. 
+suggest the relative uncertainty associated with same-day fluctuation to be $\pm$1\%. 
 This indicates that although initialization conditions of the instrument strongly affect photon-counting, 
 the instrument is stable after initialization.
-Therefore the variation of intensity measured on different days is described by a normalization factor as a function of day, 
+Therefore the variation of intensity measured on different days can be described by a normalization factor as a function of day, 
 by measuring the reference sample. 
 After correcting the integrated areas of spectra with their normalization factors, 
-the uncertainty associated with instrument initialization is canceled in calculations of light output ratios. 
+the uncertainty associated with instrument is dominated by same-day fluctuation. 
 Measurements on the reference sample when exciting its four different sides suggest the corresponding uncertainty to be $\pm$1\%, 
 due to sample imperfection (optical surface, dopant concentration, etc). 
 The monochromators have an accuracy of $\pm$0.5 nm, which translates into a negligible uncertainty on the integrated area of a spectrum. 
@@ -311,7 +311,7 @@ Table~\ref{table:3} shows light output ratios excited at three different wavelen
 1X samples of same dose (6~Mrad) and dose rate (80~krad/hr), 
 but at two different ambient temperatures (23~$^\circ$C and -30~$^\circ$C) during irradiation. 
 Table~\ref{table:castor} shows light output ratios excited at three different wavelengths for 
-1X and 2X samples of same dose (0.24~Mrad) at very low dose rate (0.24~krad/hr), 
+1X and 2X samples of the same dose (1.68~Mrad) at very low dose rate (0.84~krad/hr), 
 
 \begin{table}[!ht]
 \centering
@@ -345,12 +345,12 @@ Table~\ref{table:castor} shows light output ratios excited at three different wa
 
 \begin{table}[!ht]
 \centering
-  \caption{Light output ratios after irradiation of 0.24~Mrad at 0.24~krad/hr. Note that the uncertainties on the total dose and dose rate are estimated to be 20\%.}
+  \caption{Light output ratios after irradiation of 1.68~Mrad at 0.84~krad/hr. Note that the uncertainty on the total dose is 10\%, and the uncertainty on the dose rate is estimated to be 20\%.}
   \begin{tabular}{c|c|c|c|c|c}
     \hline
     Sample		 &\begin{tabular}{@{}c@{}}Dose\\(Mrad)\end{tabular}  & \begin{tabular}{@{}c@{}}Dose rate \\(krad/hr)\end{tabular}  &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
-    1X     	    	 & 0.24 & 0.24  &0.94 ${\pm}$ 0.02&0.94 ${\pm}$ 0.02	&0.88 ${\pm}$ 0.02	\\ \hline 
-    2X     	    	 & 0.24 & 0.24  &0.95 ${\pm}$ 0.02&0.97 ${\pm}$ 0.02	&0.90 ${\pm}$ 0.02	\\ \hline
+    1X     	    	 & 1.68 & 0.84  &0.94 ${\pm}$ 0.02&0.94 ${\pm}$ 0.02	&0.88 ${\pm}$ 0.02	\\ \hline 
+    2X     	    	 & 1.68 & 0.84  &0.95 ${\pm}$ 0.02&0.97 ${\pm}$ 0.02	&0.90 ${\pm}$ 0.02	\\ \hline
   \end{tabular}
   \label{table:castor}
 \end{table}
@@ -384,10 +384,10 @@ show that the reduction in secondary dopant's light output is two times higher a
 Measurements at 350~nm excitation wavelength, which excites largely secondary dopant and non-negligible primary dopant, 
 confirm greater reduction at 429~krad/hr in secondary dopant's light output. 
 Measurements at 285~nm excitation wavelength, which excites PVT and primary dopant, show no significant difference 
-in primary light output ratios between two dose rates. 
+in light output ratios between two dose rates. 
 
 However, Table~\ref{table:castor} and Table~\ref{table:2} show that the amount of light output reduction is comparable 
-between a total dose of 0.24~Mrad at very low dose rate 0.24~krad/hr and a total dose of 3-4~Mrad at a much higher dose rate 9~krad/hr.
+between a total dose of 1.68~Mrad at very low dose rate 0.84~krad/hr and a total dose of 3-4~Mrad at a much higher dose rate 9~krad/hr.
 
 The diffusion rate of oxygen in PVT is expected to be higher at higher temperature. 
 Temperature also affects molecules' average kinetic energy and therefore various energy transfer mechanisms in the scintillator. 
@@ -404,10 +404,10 @@ We found that the plastic scintillator's secondary dopant is damaged by irradiat
 This indicates that radiation damage is not only to the substrate but also to the dopants of plastic scintillators. 
 Measurements of the light output from surface excitation show a dose rate effect in radiation damage to the secondary dopant, 
 that the higher dose rate 429~krad/hr causes more damage to the secondary dopant than the lower dose rate 9~krad/hr. 
-However, a total dose of 0.24~Mrad at very low dose rate 0.24~krad/hr causes the similar amount of damage to the dopants as 
+However, a total dose of 1.68~Mrad at very low dose rate 0.84~krad/hr causes the similar amount of damage to the dopants as 
 a total dose of 3-4~Mrad at higher dose rate 9~krad/hr, suggesting nontrivial mechanisms of radiation damage to the dopants. 
 In particular, sub-krad/hr dose rate effect on scintillator light output is of interest to the upgrade of the CMS hadron calorimeter, 
-and more comprehensive studies would help to better design hadron calorimeters and to better understand radiation damage on dopants.
+and more comprehensive studies would help to design hadron calorimeters and to understand radiation damage to scintillator dopants.
 We observe that more secondary dopant is damaged during the irradiation at -30~$^\circ$C than at 23~$^\circ$C. 
 This is also of interest to the upgrade of the CMS hadron calorimeter, with the possible scenario of cold environment, 
 which requires a deeper understanding of the temperature effect on plastic scintillator during irradiation. 
@@ -419,7 +419,7 @@ which requires a deeper understanding of the temperature effect on plastic scint
 
 \section{Absorption and Emission Spectra while Annealing}
 
-Comparison between the variations in the bulk-material absorption spectrum and the fluorescence emission spectrum 
+Comparison between the variations in the bulk-material absorption spectrum~\cite{kak} and the fluorescence emission spectrum 
 during the annealing process shows that significant change in the bulk absorption does not affect the fluorescence emission measurements. 
 
 \begin{figure}[!ht]
