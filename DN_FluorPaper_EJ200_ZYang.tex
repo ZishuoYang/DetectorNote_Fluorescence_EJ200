@@ -21,7 +21,7 @@
 %% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[review]{elsarticle}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -78,7 +78,8 @@
 \usepackage{color}
 %%\usepackage{multirow}
 
-\journal{Nuclear Physics B}
+\journal{Nuclear Instruments and Methods B}
+\bibliographystyle{elsarticle-num}
 
 \begin{document}
 
@@ -126,9 +127,9 @@
 \address[eljen]{Eljen Technology, 1300 W. Broadway, Sweetwater, TX 79556, USA}
 
 \begin{abstract}
-Fluorescence emission yield versus wavelengths for plastic scintillator EJ-200 of various dopant concentrations is measured, 
-before and after irradiation by $\rm {^{60}Co}$ source for various doses and dose rates. 
-Dose, dose rate, and temperature effects on dopants during irradiations are investigated.
+Fluorescence light output versus wavelengths for plastic scintillator EJ-200 with varying dopant concentrations is measured 
+before and after irradiations of various doses and dose rates. 
+Dose, dose rate, and temperature effects on the scintillator's dopants during irradiations are investigated.
 \end{abstract}
 
 \begin{keyword}
@@ -145,83 +146,82 @@ plastic scintillator\sep fluorescence\sep radiation damage\sep spectrophotometer
 %%\linenumbers
 
 %% main text
-\section{Introduction (to add more)}
+\section{Introduction}
 Organic plastic scintillators made of polystyrene (PS) or polyvinyltoluene (PVT) substrate and wavelength-shifting dopants have 
 long been popular in detectors used in particle physics, nuclear physics, radiation safety, and health physics applications 
 due to their high light output, low cost, fast response, and versatility of physical construction. 
 Prolonged exposure of plastic scintillator to ionizing radiation, however, can result in damage such that
 absorption in the substrate increases and the transfer efficiency from initial excitation of the substrate to the dopants
 combined with a dopant's probability of radiative relaxation lessens. 
-In this paper, we present fluorescence yield measurements before and after gamma irradiation of various doses and 
-dose rates, for one type of plastic scintillator manufactured by Eljen Technology, EJ-200 (similar to BC-408 from Bicron) 
-with different concentrations of the primary and secondary dopant.
+In this paper, we present fluorescence yield measurements before and after irradiations of various doses and 
+dose rates for one type of plastic scintillator manufactured by Eljen Technology, EJ-200 (similar to BC-408 from Bicron) 
+with different concentrations of primary and secondary dopants.
 Dose rate effects are of interest because material-testing is typically done at much higher dose rates than 
-which the scintillator will experience in use, due to reactor-time cost.
+that which the scintillator will experience in use, due to reactor-time cost.
 Dose rate effects may be responsible for the factor-of-three-larger light loss with integrated luminosity 
-in the Compact Muon Solenoid (CMS) endcap hadron calorimeter (to cite) than expected based on high dose rate exposure 
-using $\rm {^{60}Co}$ sources (to cite). 
+in the Compact Muon Solenoid (CMS) endcap hadron calorimeter~\cite{phaseiitdr,ecfa2015} than expected based on high dose rate exposure 
+using $\rm {^{60}Co}$ sources~\cite{vasken,ByonWagner1993263}. 
 
-The effect of dose and dose rate on radiation-induced absorption increase have been the subject of many investigations (to cite).
-The presence of oxygen plays an important role during and after irradiation (to cite).
-The studies show that the penetration depth of oxygen into the substrate depends on the dose rate: 
-at lower dose rates, oxygen penetrates more deeply (to cite). 
-Because of the importance of the interaction of oxygen with radicals produced from the substrate during irradiation, 
+The effect of dose and dose rate on the radiation-induced increase of absorption have been the subject of many investigations~\cite{sauli}.
+The presence of oxygen plays an important role during and after irradiation.
+Studies show that the penetration depth of oxygen into the substrate depends on the dose rate: 
+at lower dose rates, oxygen penetrates more deeply~\cite{sauli,Wick1991472,Wick2001341}. 
+Because of the importance of the interaction of oxygen with radicals produced in the substrate during irradiation, 
 this can lead to dose rate effects. Two types of interactions occur in this process. 
 The presence of oxygen increases the number of migration mechanisms for the radicals produced during irradiation. 
-This allows the radicals that can create color centers which absorbs light to migrate, find other radicals, 
-and reform chemical bonds that do not create color centers.
-However, as discussed in (to cite Bross), Oxygen also interacts with the radicals produced during irradiation in a way 
-that forms color centers. 
+This allows the radicals that create color centers which absorb light to migrate, find other radicals, 
+and reform chemical bonds that are not color centers~\cite{Wulkop1995141}.
+However, oxygen can also interact with the radicals produced during irradiation in a way 
+that forms additional color centers~\cite{bross19921199}. 
 
-Studies on the radiation damage effect on the light yield are fewer than those on the absorption. 
+Studies on the effect of radiation damage to the light yield are fewer than those on the absorption. 
 Several studies indicate that damage is to the substrate or the transfer of substrate's emission to dopants, 
 rather than on the dopants themselves.
 Some studies have indicated that while oxygen plays a beneficial role in regards to annealing of induced absorption effects after 
-irradiation, it plays a detrimental role in regards to light output (to cite). 
+irradiation, it plays a detrimental role in regards to light output\cite{Biagtan1996125}. 
 
-In order to understand the relative role of destruction of the dopants versus damage to the substrate for modern plastic scintillators, 
+In order to understand the relative role of the destruction of dopants versus damage to the substrate for modern plastic scintillators, 
 we have studied the light output for plastic scintillator EJ-200 with various dopant concentrations, 
 for different total doses and dose rates. 
 
 \section{Sample and Irradiation}
 EJ-200 uses PVT as a substrate. It has a light output that is 60\% of anthracene and a maximum-emission wavelength of 425 nm (blue). 
-Eljen Technology prepared the samples with dimensions of 1x1x5 cm$^{3}$. 
-The samples were made with concentration of the primary and secondary dopants at 1.0 and 2.0 that of 
+Eljen Technology prepared samples with dimensions of 1x1x5 cm$^{3}$. 
+The samples were made with concentrations of primary and secondary dopants at 1.0 and 2.0 that of 
 the nominal concentration (which has optimized light output before irradiation). 
-1P and 2P refer to nominal and double the nominal concentration of the primary, 
-while 1X and 2X refer to nominal and double the nominal concentration of the secondary.
+1P and 2P refer to nominal and double the nominal concentration of primary dopant, 
+while 1X and 2X refer to nominal and double the nominal concentration of secondary dopant.
 The samples for irradiation were wrapped in Tyvek sheets and were in contact with air.
-Using the LHC beamline irradiation facility (CASTOR) at CERN, 
-one 1X and one 2X sample were irradiated at about 0.24 krad/hr for a total dose of 0.24 Mrad. (to add uncertainties) 
-Using a $\rm {^{60}Co}$ source at the National Institute of Standard and Technology (NIST), some 1P and 2P samples were irradiated  
-at rates of 10 krad/hr and 429 krad/hr for a total dose of 3 Mrad, at about 23 $^\circ$C ambient temperature.  
-Using a $\rm {^{60}Co}$ source at NASA, one 1P and one 2P sample were irradiated  
-at 10 krad/hr for a total dose of 4 Mrad, at about 23 $^\circ$C ambient temperature; 
-Two samples that previously received 3 Mrad at 10 krad/hr at NIST were irradiated again at 10 krad/hr for an additional dose of 4 Mrad;
-Two 1X samples were irradiated at 80 krad/hr for 5.8 Mrad, at different temperatures 23 $^\circ$C and -30 $^\circ$C.
+Using a $\rm {^{60}Co}$ source at the National Institute of Standard and Technology (NIST), some 1P and 2P samples were irradiated 
+at rates of 9 krad/hr and 429 krad/hr for a total dose of 3 Mrad, at about 23 $^\circ$C ambient temperature;  
+One 1P and one 2P sample were irradiated at 9 krad/hr for a total dose of 4 Mrad, at about 23 $^\circ$C ambient temperature; 
+Two samples that previously received 3 Mrad at 9 krad/hr at NIST were irradiated again at 9 krad/hr for an additional dose of 4 Mrad;
+Two 1X samples were irradiated at 80 krad/hr for 6 Mrad, at different temperatures 23 $^\circ$C and -30 $^\circ$C.
+Using the LHC beamline irradiation facility CASTOR, where neutrons and gamma rays contribute the most to ionizing radiation, 
+one 1X and one 2X sample were irradiated at 0.24 krad/hr for a total dose of 0.24 Mrad. 
 Additional samples that were produced in the same batch were kept non-irradiated for calibration and comparison.
 Table~\ref{table:samples} summarizes the samples irradiated in this study.
 
 \begin{table}[!ht]
 \centering
   \caption{Summary of irradiated EJ-200 samples. 
-1P and 2P refer to nominal and double the nominal concentration of the primary dopant, 
-while 1X and 2X refer to nominal and double the nominal concentration of the secondary dopant.}
-  \begin{tabular}{c|c|c}
+1P and 2P refer to nominal and double the nominal concentration of primary dopant, 
+while 1X and 2X refer to nominal and double the nominal concentration of secondary dopant.}
+  \begin{tabular}{c|c|c|c}
     \hline
-    Dopant concentration 	    & Dose (Mrad)  		& Dose rate (krad/hr)    \\ \hline 
-    1P     	    		    & 3 $\pm$  			& 10 $\pm$  	   	 \\ 
-    2P     	    		    & 3 $\pm$  			& 10 $\pm$  	   	 \\ \hline
-    1P				    & 3 $\pm$			& 429 $\pm$		 \\ 
-    2P				    & 3 $\pm$			& 429 $\pm$		 \\ \hline
-    1P     	    		    & 4 $\pm$  			& 10 $\pm$  	   	 \\ 
-    2P     	    		    & 4 $\pm$  			& 10 $\pm$  	   	 \\ \hline
-    1P				    & 7 $\pm$			& 10 $\pm$		 \\ 
-    2P				    & 7 $\pm$			& 10 $\pm$		 \\ \hline
-    1X     	    		    & 0.24 $\pm$  		& 0.24 $\pm$  	   	 \\ 
-    2X     	    		    & 0.24 $\pm$  		& 0.24 $\pm$  	   	 \\ \hline
-    1X at ~23 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\ 
-    1X at -30 $^\circ$C		    & 6 $\pm$			& 80 $\pm$		 \\
+    Sample          & Dose (Mrad)  		& Dose rate (krad/hr)    & Irradiation type  \\ \hline 
+    1P 		    & 2.95 $\pm$ 0.05 		& 9.48 $\pm$ 0.16   	 & $\rm {^{60}Co}$  \\ 
+    2P 		    & 2.95 $\pm$ 0.05		& 9.48 $\pm$ 0.16  	 & $\rm {^{60}Co}$	\\ \hline
+    1P		    & 2.95 $\pm$ 0.05 		& 429 $\pm$ 7		 & $\rm {^{60}Co}$	\\ 
+    2P		    & 2.95 $\pm$ 0.05 		& 429 $\pm$ 7		 & $\rm {^{60}Co}$	\\ \hline
+    1P 		    & 4.00 $\pm$ 0.07		& 9.20 $\pm$ 0.16   	 & $\rm {^{60}Co}$	\\ 
+    2P 		    & 4.00 $\pm$ 0.07		& 9.20 $\pm$ 0.16  	 & $\rm {^{60}Co}$	\\ \hline
+    1P		    & (2.95+4.00) $\pm$ 0.09	& 9.32 $\pm$ 0.11	 & $\rm {^{60}Co}$	\\ 
+    2P		    & (2.95+4.00) $\pm$ 0.09	& 9.32 $\pm$ 0.11	 & $\rm {^{60}Co}$	\\ \hline
+    1X 		    & 0.24 $\pm$ 0.05		& 0.24 $\pm$ 0.05   	 & CASTOR	\\ 
+    2X 		    & 0.24 $\pm$ 0.05		& 0.24 $\pm$ 0.05  	 & CASTOR 	\\ \hline
+    1X		    & 5.82 $\pm$ 0.10		& 80.3 $\pm$ 1.4	 & $\rm {^{60}Co}$, at ~23 $^\circ$C\\ 
+    1X		    & 5.82 $\pm$ 0.10		& 80.4 $\pm$ 1.4	 & $\rm {^{60}Co}$, at -30 $^\circ$C\\
     \hline
   \end{tabular}
   \label{table:samples}
@@ -229,167 +229,219 @@ while 1X and 2X refer to nominal and double the nominal concentration of the sec
 
 \section{Instrumentation and Techniques}
 The fluorescence emission spectra were measured using a FluoroMax-Plus fluorescence spectrometer by Horiba Scientific. 
-The spectrometer uses a Xenon arc lamp as continuous light source. 
-Light from the lamp is collected by a diamond-turned elliptical mirror and focused on the entrance slit of the excitation monochromator. 
+The spectrometer uses a Xenon arc lamp as a continuous light source. 
+Light from the lamp is collected by a diamond-turned elliptical mirror and focused on the entrance slit of the excitation monochromator.
 The entrance and exit slits of the excitation monochromator are continuously adjustable, 
 which controls the bandpass of the excitation beam. 
 A toroidal mirror focuses the excitation beam onto the sample, while a small amount of the beam is split off by a beam-splitter 
 to the reference silicon photodiode. 
-Fluorescence emission produced by the sample is subsequently collected at ninety-degree angle with respect to the excitation beam. 
+Fluorescence emission produced by the sample is subsequently collected at 90$^\circ$ angle with respect to the excitation beam. 
 Similar to the excitation monochromator, the emission monochromator selects the bandpass of emission light that is sent to 
 a Hamamatsu R928 photomultiplier tube (PMT). 
-After correcting signals of the PMT and the photodiode according to their quantum efficiencies, 
+After correcting the signals of the PMT and the photodiode by their quantum efficiencies, 
 the fluorescence emission signal is calculated as the ratio of the PMT's signal over the photodiode's signal. 
 For each fluorescence spectrum measurement, a fixed excitation wavelength is used, 
-and the emission intensity at a range of wavelengths is measured. 
+and the emission intensity at a range of wavelengths is measured~\cite{horiba}. 
 
-In order to study the effect of radiation damage on the primary and secondary dopants, three excitation wavelengths were chosen: 
-285 nm 	exciting PVT and the primary dopant, 
-350 nm exciting the secondary and primary dopants, 
-and 400 nm exciting mostly the secondary dopant. 
+In order to study the effect of radiation damage to primary and secondary dopants, three excitation wavelengths were chosen based on 
+absorption and emission spectra provided by Eljen Technology~\cite{chuck}: 
+285~nm (exciting PVT and primary dopant), 
+350~nm (exciting mainly secondary dopant and non-negligible primary dopant),
+and 400~nm (exciting almost exclusively secondary dopant).
+
+Because the measurements are very sensitive to slight position changes relative to the excitation beam, 
+the sample holder was customized to ensure reproducibility. 
+Initialization of the instrument includes three hours of warm-up time, during which the spectrophotometer takes blank measurements. 
 The sample placement in the spectrometer adopts the front-surface configuration (shown in Figure~\ref{fig:sample_placement}), 
 which gives the excitation beam a 60$^\circ$ incident angle and maximizes fluorescence emission at the surface. 
-This minimizes the effect of self absorption when measuring fluorescence yield after irradiation. 
-Continuous measurements after irradiation for up to 7 days show no significant change in a sample's light output, 
-while more than 15\% recovery in the bulk transmission spectrum is seen. ({\color{red}{should I show plots about this in the appendix?}}) 
+This minimizes the effect of self-absorption when measuring the fluorescence yield after irradiation. 
+Continuous measurements after irradiation for up to 7 days have shown no significant change in fluorescence emission spectrum, 
+while more than 15\% recovery in the bulk transmission spectrum is seen (Appendix A).
+
+%%({\color{red}{should I show plots about this in the appendix?}}) 
+
+
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=200pt]{./figures/sample_placement.png}
 	\caption{Front-surface configuration for fluorescence spectrum measurements.}
+	\includegraphics[width=200pt]{./figures/sample_placement.png}
 	\label{fig:sample_placement}
 \end{figure}
 
 \section{Measurements} 
 After irradiations, the samples showed coloration which partially disappeared after time due to the annealing of the substrate. 
-The samples were repeatedly measured after irradiation until no additional annealing was shown. 
-Typical fluorescence spectra of EJ-200 is shown in Figure~\ref{fig:EJ200SP-1P-exc285}, 
-after 3 Mrad at 10 krad/hr and after 3 Mrad at 429 krad/hr.
+The samples were repeatedly measured after irradiation until no additional annealing was seen. 
+A typical fluorescence spectrum of EJ-200 is shown in Figure~\ref{fig:EJ200SP-1P-exc285}, 
+after 3~Mrad at 9~krad/hr and after 3~Mrad at 429~krad/hr.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=300pt]{./figures/EJ200SP-1P-exc285.png}
+	\caption{Comparison between fluorescence spectrum of an irradiated sample to that of the non-irradiated sample excited at 285 nm.}
+	\includegraphics[width=300pt]{./figures/EJ200-1X-exc285.png}
 	%%\includegraphics[width=175pt]{./figures/EJ200SP-2P-exc285.png}
-	\caption{Fluorescence spectrum excited at 285 nm.}
 	\label{fig:EJ200SP-1P-exc285}
 \end{figure}
 
-We calculate the light yield ratio (R) using the integrated area of the irradiated sample's spectrum 
+We calculate the light output ratio (R) using the integrated area of the irradiated sample's spectrum 
 with respect to the corresponding non-irradiated one. 
+Systematic uncertainties associated with the integrated area of each spectrum measurement are identified. 
+Repeated measurements on the reference sample on different days, after turning off and on the instrument everyday, 
+suggest the corresponding relative uncertainty to be $\pm$8\%. 
+However, repeated measurements on the reference sample during the same day, when the spectrophotometer is continuously running, 
+suggest the corresponding relative uncertainty to be $\pm$1\%. 
+This indicates that although initialization conditions of the instrument strongly affect photon-counting, 
+the instrument is stable after initialization.
+Therefore the variation of intensity measured on different days is described by a normalization factor as a function of day, 
+by measuring the reference sample. 
+After correcting the integrated areas of spectra with their normalization factors, 
+the uncertainty associated with instrument initialization is canceled in calculations of light yield ratios. 
+Measurements on the reference sample when exciting its four different sides suggest the corresponding uncertainty to be $\pm$1\%, 
+due to sample imperfection (optical surface, dopant concentration, etc). 
+The monochromators have an accuracy of $\pm$0.5 nm, which translates into a negligible uncertainty on the integrated area of a spectrum. 
+Since PMT's photon-counting obeys Poisson distribution and the number of photons is large, 
+the corresponding random uncertainty is negligible. 
+Therefore, due to mainly two independent uncertainties (sample imperfection and instrument systematic uncertainty), 
+the uncertainty on light output ratio is found to be equal to or less than $\pm$2\%.
 
-({\color{red}{Should I present all the data in one table?}}) 
-Table~\ref{table:light-yield-ratio} shows ratio of light output at different excitation wavelengths ($R_{x~nm}$) 
-for all the irradiated samples in this study.
-
-Table~\ref{table:1} shows the ratio of light output excited at three different wavelengths for 
-1P {\color{red}{(1P1X?)}} and 2P samples of 3.0 Mrad at 10 krad/hr and 429 krad/hr. 
-Table~\ref{table:2} shows the ratio of light output excited at three different wavelengths for 
-1P {\color{red}{(1P1X?)}} samples of different doses at dose rate 10 krad/hr. 
-Table~\ref{table:3} shows the ratio of light output excited at three different wavelengths for 
-1X {\color{red}{(1P1X?)}} samples of same dose (5.8 Mrad) and dose rate (80 krad/hr), 
-but at two different ambient temperatures (23 $^\circ$C and -30 $^\circ$C) during irradiation. 
-
-\begin{table}[!ht]
-\centering
-  \caption{Ratio of light output excited at different wavelengths to that before irradiation for EJ-200 scintillators. 
-1P and 2P refer to nominal and double the nominal concentration of the primary dopant, 
-while 1X and 2X refer to nominal and double the nominal concentration of the secondary dopant.}	
-  \begin{tabular}{c|c|c|c|c|c}
-    \hline
-    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
-    1P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 $\pm$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
-    2P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 ${\pm}$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ \hline
-    1P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ 
-    2P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ \hline
-    1P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.93 ${\pm}$	&0.92 ${\pm}$	&0.87 ${\pm}$	\\ 
-    2P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.94 ${\pm}$	&0.93 ${\pm}$	&0.90 ${\pm}$	\\ \hline
-    1P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.81 ${\pm}$	\\ 
-    2P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.89 ${\pm}$	&0.83 ${\pm}$	\\ \hline
-    1X     	    	 & 0.24 $\pm$  	& 0.24 $\pm$  	   	 &0.94 ${\pm}$	&0.94 ${\pm}$	&0.88 ${\pm}$	\\ 
-    2X     	    	 & 0.24 $\pm$  	& 0.24 $\pm$  	   	 &0.95 ${\pm}$	&0.97 ${\pm}$	&0.90 ${\pm}$	\\ \hline
-    1X at ~23 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.77 ${\pm}$	\\ 
-    1X at -30 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.84 ${\pm}$	&0.70 ${\pm}$	\\
-    \hline
-  \end{tabular}
-  \label{table:light-yield-ratio}
-\end{table}
+Table~\ref{table:1} shows light output ratios excited at three different wavelengths for 
+1P and 2P samples of the same dose (3~Mrad) at different dose rates (9~krad/hr and 429~krad/hr). 
+Table~\ref{table:2} shows light output ratios excited at three different wavelengths for 
+1P and 2P samples of different doses at dose rate 9~krad/hr. 
+Table~\ref{table:3} shows light output ratios excited at three different wavelengths for 
+1X samples of same dose (6~Mrad) and dose rate (80~krad/hr), 
+but at two different ambient temperatures (23~$^\circ$C and -30~$^\circ$C) during irradiation. 
+Table~\ref{table:castor} shows light output ratios excited at three different wavelengths for 
+1X and 2X samples of same dose (0.24~Mrad) at very low dose rate (0.24~krad/hr), 
 
 \begin{table}[!ht]
 \centering
-  \caption{Light output ratio after irradiations of the same total dose and at different dose rates.}
+  \caption{Light output ratios after irradiations of the same total dose and at different dose rates. The uncertainties on the total dose and dose rate are less than 2\%.}
   \begin{tabular}{c|c|c|c|c|c}
     \hline
-    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
-    1P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 $\pm$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
-    1P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ \hline 
-    2P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 ${\pm}$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
-    2P			 & 3 $\pm$	& 429 $\pm$		 &0.95 ${\pm}$	&0.91 ${\pm}$	&0.84 ${\pm}$	\\ \hline
+    Sample		 &\begin{tabular}{@{}c@{}}Dose\\(Mrad)\end{tabular}  & \begin{tabular}{@{}c@{}}Dose rate \\(krad/hr)\end{tabular}  &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1P     	    	 & 2.95  	& 9.48 	 &0.95 ${\pm}$ 0.02 	&0.95 ${\pm}$ 0.02 	&0.92 ${\pm}$ 0.02 		\\ 
+    1P			 & 2.95		& 429 	 &0.95 ${\pm}$ 0.02 	&0.91 ${\pm}$ 0.02 	&0.84 ${\pm}$ 0.02 		\\ \hline 
+    2P     	    	 & 2.95  	& 9.48 	 &0.95 ${\pm}$ 0.02	&0.95 ${\pm}$ 0.02 	&0.92 ${\pm}$ 0.02 		\\ 
+    2P			 & 2.95		& 429 	 &0.95 ${\pm}$ 0.02 	&0.91 ${\pm}$ 0.02 	&0.84 ${\pm}$ 0.02 		\\ \hline
   \end{tabular}
   \label{table:1}
 \end{table}
 
 \begin{table}[!ht]
 \centering
-  \caption{Light output ratio after irradiations of different total doses at dose rate 10 krad/hr.}
+  \caption{Light output ratios after irradiations of different total doses at dose rate 9 krad/hr. The uncertainties on the total dose and dose rate are less than 2\%.}
   \begin{tabular}{c|c|c|c|c|c}
     \hline
-    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
-    1P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 $\pm$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
-    1P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.93 ${\pm}$	&0.92 ${\pm}$	&0.87 ${\pm}$	\\ 
-    1P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.81 ${\pm}$	\\ \hline
-    2P     	    	 & 3 $\pm$  	& 10 $\pm$  	   	 &0.95 ${\pm}$	&0.95 ${\pm}$	&0.92 ${\pm}$	\\ 
-    2P     	    	 & 4 $\pm$  	& 10 $\pm$  	   	 &0.94 ${\pm}$	&0.93 ${\pm}$	&0.90 ${\pm}$	\\ 
-    2P			 & 7 $\pm$	& 10 $\pm$		 &0.90 ${\pm}$	&0.89 ${\pm}$	&0.83 ${\pm}$	\\ \hline
+    Sample 		 &\begin{tabular}{@{}c@{}}Dose\\(Mrad)\end{tabular}  &\begin{tabular}{@{}c@{}}Dose rate \\(krad/hr)\end{tabular}  &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1P     	    	 & 2.95  	 &9.48 	 &0.95 ${\pm}$ 0.02	&0.95 ${\pm}$ 0.02 	&0.92 ${\pm}$ 0.02 		\\ 
+    1P     	    	 & 4.00	   	 &9.20	 &0.93 ${\pm}$ 0.02 	&0.92 ${\pm}$ 0.02 	&0.87 ${\pm}$ 0.02 		\\ 
+    1P			 & 6.95		 &9.32	 &0.90 ${\pm}$ 0.02 	&0.88 ${\pm}$ 0.02 	&0.81 ${\pm}$ 0.02 		\\ \hline
+    2P     	    	 & 2.95	   	 &9.48	 &0.95 ${\pm}$ 0.02 	&0.95 ${\pm}$ 0.02 	&0.92 ${\pm}$ 0.02 		\\ 
+    2P     	    	 & 4.00	   	 &9.20	 &0.94 ${\pm}$ 0.02 	&0.93 ${\pm}$ 0.02 	&0.90 ${\pm}$ 0.02 		\\ 
+    2P			 & 6.95		 &9.32	 &0.90 ${\pm}$ 0.02 	&0.89 ${\pm}$ 0.02 	&0.83 ${\pm}$ 0.02 		\\ \hline
   \end{tabular}
   \label{table:2}
 \end{table}
 
 \begin{table}[!ht]
 \centering
-  \caption{Light output ratio after irradiations of the same total dose and dose rate at 23 $^\circ$C and -30 $^\circ$C.}
+  \caption{Light output ratios after irradiation of 0.24~Mrad at 0.24~krad/hr. Note that the uncertainties on the total dose and dose rate are estimated to be 20\%.}
   \begin{tabular}{c|c|c|c|c|c}
     \hline
-    Dopant concentration & Dose (Mrad) 	& Dose rate (krad/hr)    &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
-    1X at ~23 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.88 ${\pm}$	&0.77 ${\pm}$	\\ 
-    1X at -30 $^\circ$C	 & 6 $\pm$	& 80 $\pm$		 &0.90 ${\pm}$	&0.84 ${\pm}$	&0.70 ${\pm}$	\\ \hline
+    Sample		 &\begin{tabular}{@{}c@{}}Dose\\(Mrad)\end{tabular}  & \begin{tabular}{@{}c@{}}Dose rate \\(krad/hr)\end{tabular}  &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1X     	    	 & 0.24 & 0.24  &0.94 ${\pm}$ 0.02&0.94 ${\pm}$ 0.02	&0.88 ${\pm}$ 0.02	\\ \hline 
+    2X     	    	 & 0.24 & 0.24  &0.95 ${\pm}$ 0.02&0.97 ${\pm}$ 0.02	&0.90 ${\pm}$ 0.02	\\ \hline
+  \end{tabular}
+  \label{table:castor}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+  \caption{Light output ratios after irradiations of the same total dose and dose rate at 23 $^\circ$C and -30 $^\circ$C.The uncertainties on the total dose and dose rate are less than 2\%.}
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline
+    Sample		 &\begin{tabular}{@{}c@{}}Dose\\(Mrad)\end{tabular}  &\begin{tabular}{@{}c@{}}Dose rate \\(krad/hr)\end{tabular}  &$R_{285~nm}$	&$R_{350~nm}$	&$R_{400~nm}$	\\ \hline
+    1X, ~23 $^\circ$C	 & 5.82 	& 80.3 			 &0.90 ${\pm}$ 0.02	&0.88 ${\pm}$ 0.02	&0.77 ${\pm}$ 0.02		\\ 
+    1X, -30 $^\circ$C	 & 5.82 	& 80.4 			 &0.90 ${\pm}$ 0.02	&0.84 ${\pm}$ 0.02	&0.70 ${\pm}$ 0.01		\\ \hline
   \end{tabular}
   \label{table:3}
 \end{table}
 
 
-\section{Interpretation (to add more)}
+
+\section{Interpretation}
+Table~\ref{table:2} shows that radiation damage is not only to the base material, but also to the dopants of plastic scintillator. 
+Measurements at 400~nm excitation wavelength, which almost exclusively excites the secondary dopant, 
+show that the secondary dopant is increasingly damaged as the total dose increases. 
+
 If the dose rate effect on light output is due to oxygen diffusion, then it is expected that the reduction in light output 
 for the same dose would have a negative correlation with the dose rate, except for when the dose rate is low enough that 
 oxygen permeates the entire sample. 
-
-Comparing the light output ratios after irradiations of 3 Mrad dose at two different dose rates, 10 krad/hr and 429 krad/hr, 
+Comparing the light output ratios after irradiations of 3~Mrad dose at two different dose rates, 9~krad/hr and 429~krad/hr, 
 we find no negative correlation between the reduction in light output and dose rate (Table~\ref{table:1}).
-On the contrary, measurements at 400 nm excitation wavelength, which almost exclusively excites the secondary dopant, 
-show that the reduction in the secondary dopant's light output is two times higher at 429 krad/hr than at 10 krad/hr.
-Measurements at 350 nm excitation wavelength, which excites largely secondary dopant and non-negligible primary dopant, 
-confirm greater reduction at 429 krad/hr in the secondary dopant's light output. 
-Measurements at 285 nm excitation wavelength, which excites PVT and the primary dopant, show no significant difference 
-in light output ratios between two dose rates. 
-({\color{red}{Alberto pointed out that there's an almost-consistent slight difference as seen in Figure~\ref{fig:EJ200SP-1P-exc285}'s primary range. Significant?}}) 
+On the contrary, measurements at 400 nm excitation wavelength, which almost exclusively excites secondary dopant, 
+show that the reduction in secondary dopant's light output is two times higher at 429~krad/hr than at 9~krad/hr.
+Measurements at 350~nm excitation wavelength, which excites largely secondary dopant and non-negligible primary dopant, 
+confirm greater reduction at 429~krad/hr in secondary dopant's light output. 
+Measurements at 285~nm excitation wavelength, which excites PVT and primary dopant, show no significant difference 
+in primary light output ratios between two dose rates. 
 
-~                                     
+However, Table~\ref{table:castor} and Table~\ref{table:2} show that the amount of light output reduction is comparable 
+between a total dose of 0.24~Mrad at very low dose rate 0.24~krad/hr and a total dose of 3-4~Mrad at a much higher dose rate 9~krad/hr.
 
-The diffusion rate of oxygen is dependent on temperature, and more oxygen diffusion into the scintillator is expected at higher temperature. 
+The diffusion rate of oxygen in PVT is expected to be higher at higher temperature. 
 Temperature also affects molecules' average kinetic energy and therefore various energy transfer mechanisms in the scintillator. 
-Studies have shown temperature effects on plastic scintillator in pre-irradiation temperature treatment (to cite) and post-irradiation 
-annealing (to cite). 
+Studies have shown temperature effects on plastic scintillator in pre-irradiation treatment~\cite{johnson} 
+and post-irradiation annealing~\cite{birks1964}. 
 However, there has been little study on the temperature effect during irradiation on plastic scintillators.
-Table~\ref{table:3} shows more reduction in the secondary dopant's light output at -30$^\circ$C than that at 23$^\circ$C. 
+Table~\ref{table:3} suggests that more secondary dopant is damaged during the irradiation at -30~$^\circ$C than at 23~$^\circ$C.  
 
-
-
+\section{Conclusion}
+Using a fluorescence spectrophotometer, fluorescence emission output versus wavelengths for plastic scintillator EJ-200 with varying 
+dopant concentrations is measured before and after irradiation for various doses and dose rates. 
+Dose, dose rate, and temperature effects on the scintillator's dopants are investigated after irradiations.
+We found that the plastic scintillator's secondary dopant is damaged by irradiation. 
+This indicates that radiation damage is not only to the substrate but also to the dopants of plastic scintillators. 
+Measurements of the light output from surface excitation show a dose rate effect in radiation damage to the secondary dopant, 
+that the higher dose rate 429~krad/hr causes more damage to the secondary dopant than the lower dose rate 9~krad/hr. 
+However, a total dose of 0.24~Mrad at very low dose rate 0.24~krad/hr causes the similar amount of damage to the dopants as 
+a total dose of 3-4~Mrad at higher dose rate 9~krad/hr, suggesting nontrivial mechanisms of radiation damage to the dopants. 
+In particular, sub-krad dose rate effect on scintillator light output is of interest to the upgrade of the CMS hadron calorimeter, 
+and more comprehensive studies would help to better design hadron calorimeters and to better understand radiation damage on dopants.
+We observe that more secondary dopant is damaged during the irradiation at -30~$^\citc$C than at 23~$^\circ$C. 
+This is also of interest to the upgrade of the CMS hadron calorimeter, with the possible scenario of cold environment, 
+which requires a deeper understanding of temperature effect on plastic scintillator during irradiation. 
 
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
-%% \appendix
+\appendix
 
-%% \section{}
-%% \label{}
+\section{Absorption and Emission Spectra while Annealing}
+
+Comparison between the variations in the bulk-material absorption spectrum and the fluorescence emission spectrum 
+during the annealing process shows that significant change in the bulk absorption does not affect the fluorescence emission measurements. 
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Absorption spectra of irradiated samples (at 23~$^\circ$C and -30~$^\circ$C) repeatedly measured during the annealing process.}
+	\includegraphics[width=300pt]{./figures/abs.png}
+	\label{fig:abs}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Fluorescence spectra of the sample irradiated at 23$^\circ$C repeatedly measured during the annealing process.}
+	\includegraphics[width=300pt]{./figures/appendix1.png}
+	\label{fig:app1}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\caption{Fluorescence spectra of the sample irradiated at -30$^\circ$C repeatedly measured during the annealing process.}
+	\includegraphics[width=300pt]{./figures/appendix2.png}
+	\label{fig:app2}
+\end{figure}
 
 %% References
 %%
@@ -401,8 +453,7 @@ Table~\ref{table:3} shows more reduction in the secondary dopant's light output 
 
 %% References with bibTeX database:
 
-\bibliographystyle{model1-num-names}
-\bibliography{<your-bib-database>}
+\bibliography{myBib}{}
 
 %% Authors are advised to submit their bibtex database files. They are
 %% requested to list a bibtex style file in the manuscript if they do
